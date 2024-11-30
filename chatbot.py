@@ -88,7 +88,7 @@ class QualityTargets:
 class EnhancedDatasetGenerator:
     def __init__(
         self,
-        model_name: str = "meta-llama/Llama-3.2-3B-Instruct-Turbo",
+        model_name: str = "google/gemma-2-27b-it",
         temperature: float = 0.7,
         max_context_length: int = 2048
     ):
@@ -590,7 +590,7 @@ def main():
         # Model selection
         model_name = st.text_input(
             "Model Name",
-            value="meta-llama/Llama-3.2-3B-Instruct-Turbo",
+            value="google/gemma-2-27b-it",
             help="Enter the name of the HuggingFace model to use"
         )
 
